@@ -1,0 +1,44 @@
+call plug#begin('~/.vim/plugged')
+
+""""""""""""""""""""""""""""""""""""
+"VimPlug configuration
+""""""""""""""""""""""""""""""""""""
+
+"Show trailing whitespaces
+Plug 'bronson/vim-trailing-whitespace'
+
+" Gotham color scheme
+Plug 'whatyouhide/vim-gotham'
+
+"gruvbox colorscheme
+Plug 'morhetz/gruvbox'
+
+" Dracula color scheme
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+" Unite
+"   depend on vimproc
+"   ------------- VERY IMPORTANT ------------
+"   you have to go to .vim/plugin/vimproc.vim and do a ./make
+"   -----------------------------------------
+Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/unite.vim'
+
+"-------- Ag for File Search
+Plug 'rking/ag.vim'
+
+" For Auto Complete 
+" ---source : https://github.com/neoclide/coc.nvim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" NerdTree
+Plug 'preservim/nerdtree'
+
+" For Auto-Pair brackets
+Plug 'jiangmiao/auto-pairs'
+
+" For customised status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
